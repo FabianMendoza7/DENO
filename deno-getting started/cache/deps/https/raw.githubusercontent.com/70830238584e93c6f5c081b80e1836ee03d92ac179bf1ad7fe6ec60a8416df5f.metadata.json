@@ -1,0 +1,31 @@
+{
+  "headers": {
+    "content-type": "text/plain; charset=utf-8",
+    "strict-transport-security": "max-age=31536000",
+    "cross-origin-resource-policy": "cross-origin",
+    "x-github-request-id": "4360:92AC:D3092E:FC7E62:64B1B319",
+    "via": "1.1 varnish",
+    "x-frame-options": "deny",
+    "x-content-type-options": "nosniff",
+    "x-fastly-request-id": "24cdd56a410792b84e78bb0f26b8077efe71d97f",
+    "x-served-by": "cache-bog2260023-BOG",
+    "source-age": "0",
+    "x-timer": "S1689367321.345996,VS0,VE166",
+    "date": "Fri, 14 Jul 2023 20:42:01 GMT",
+    "etag": "W/\"d81914b3498fbd388b181b0b70bd6456463d493a6e8b9140bef057805d464ce0\"",
+    "access-control-allow-origin": "*",
+    "content-security-policy": "default-src 'none'; style-src 'unsafe-inline'; sandbox",
+    "vary": "Authorization,Accept-Encoding,Origin",
+    "accept-ranges": "bytes",
+    "cache-control": "max-age=300",
+    "x-xss-protection": "1; mode=block",
+    "x-cache": "MISS",
+    "x-cache-hits": "0",
+    "expires": "Fri, 14 Jul 2023 20:47:01 GMT"
+  },
+  "url": "https://raw.githubusercontent.com/bricewilson/Deno-Getting-Started/Linking_to_External_Code/affiliate_data.ts",
+  "now": {
+    "secs_since_epoch": 1689367322,
+    "nanos_since_epoch": 295196100
+  }
+}

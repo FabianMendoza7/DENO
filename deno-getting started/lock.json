@@ -1,0 +1,7 @@
+{
+  "version": "2",
+  "remote": {
+    "https://raw.githubusercontent.com/bricewilson/Deno-Getting-Started/Linking_to_External_Code/affiliate_data.ts": "72aad27e30244a19b5e1cef798d171a65d35609744f3e8dd4fd015546983fb97",
+    "https://raw.githubusercontent.com/bricewilson/Deno-Getting-Started/Linking_to_External_Code/pricing_rules.ts": "34ad9fb9957b724d91b57c02d26956fe4bf38568fe4cb3d47c2839bbc22b64cd"
+  }
+}

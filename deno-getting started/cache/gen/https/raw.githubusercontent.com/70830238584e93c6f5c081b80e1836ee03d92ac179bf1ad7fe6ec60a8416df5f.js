@@ -1,0 +1,9 @@
+export function getDataUrl(affiliateID) {
+    let data_url = '';
+    switch(affiliateID){
+        case 5:
+            data_url = 'https://raw.githubusercontent.com/bricewilson/Deno-Getting-Started/Using_the_Deno_Runtime_API/products.json';
+    }
+    return data_url;
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9icmljZXdpbHNvbi9EZW5vLUdldHRpbmctU3RhcnRlZC9MaW5raW5nX3RvX0V4dGVybmFsX0NvZGUvYWZmaWxpYXRlX2RhdGEudHMiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGZ1bmN0aW9uIGdldERhdGFVcmwoYWZmaWxpYXRlSUQ6IG51bWJlcik6IHN0cmluZyB7XG5cbiAgbGV0IGRhdGFfdXJsOiBzdHJpbmcgPSAnJztcblxuICBzd2l0Y2ggKGFmZmlsaWF0ZUlEKSB7XG4gICAgY2FzZSA1OlxuICAgICAgZGF0YV91cmwgPSAnaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2JyaWNld2lsc29uL0Rlbm8tR2V0dGluZy1TdGFydGVkL1VzaW5nX3RoZV9EZW5vX1J1bnRpbWVfQVBJL3Byb2R1Y3RzLmpzb24nO1xuICB9XG5cbiAgcmV0dXJuIGRhdGFfdXJsO1xufSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLFNBQVMsV0FBVyxXQUFtQjtJQUU1QyxJQUFJLFdBQW1CO0lBRXZCLE9BQVE7UUFDTixLQUFLO1lBQ0gsV0FBVztJQUNmO0lBRUEsT0FBTztBQUNUIn0=
