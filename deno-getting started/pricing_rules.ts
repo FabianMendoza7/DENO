@@ -1,4 +1,4 @@
-export function getThresholdPrice(affiliateID: number): number {
+export function getThresholdPrice(affiliateID: any): number {
   switch (affiliateID) {
     case 1:
       return 100;
