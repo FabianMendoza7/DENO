@@ -17,7 +17,7 @@ export async function loadPost(id: string): Promise<Post | null> {
 
   const { data, content } = parse(raw);
   const params = data as Record<string, string>;
-  console.log(data);
+  //console.log(data);
 
   const post: Post = {
     id,
@@ -30,18 +30,35 @@ export async function loadPost(id: string): Promise<Post | null> {
   return post;
 }
 
-export async function listPosts(): Promise<Post[]> {
+export async function listPosts(): Promise<(Post | null)[]> {
+  const promises: any[] = [];
+
+  for await (const entry of Deno.readDir("./content/posts")) {
+    const { name } = entry;
+    const [id] = name.split(".");
+    if (id) promises.push(loadPost(id));
+  }
+
+  const posts: (Post | null)[] = await Promise.all(promises) as Post[];
+
+  posts.sort((a, b): number => {
+    return b.date.getTime() - a.date.getTime();
+  });
+
+  return posts;
+}
+
+export async function listPostsSequentially(): Promise<Post[]> {
   const posts: Post[] = [];
 
   for await (const entry of Deno.readDir("./content/posts")) {
     const { name } = entry;
     const [id] = name.split(".");
     const post: Post | null = await loadPost(id);
+
     if (!post) continue;
     posts.push(post);
   }
 
   return posts;
 }
-
-await loadPost("hello-world");

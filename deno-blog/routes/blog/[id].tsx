@@ -13,7 +13,7 @@ export const handler: Handlers = {
 
 export default function PagePost(props: PageProps) {
   const { post } = props?.data || {};
-  console.log(">> post.body", post.body);
+  //console.log(">> post.body", post.body);
   return (
     <article class="p-4">
       <h1 class="text-2xl font-bold">{post.title}</h1>
