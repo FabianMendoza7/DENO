@@ -1,13 +1,13 @@
-FROM hayd/alpine-deno:1.2.2
+FROM hayd/alpine-deno:1.5.4 
 
-RUN deno install --allow-read --allow-run --allow-write --allow-net -f -q --unstable https://deno.land/x/denon@2.3.1/denon.ts
+RUN deno install -qAf --unstable https://deno.land/x/denon@2.4.4/denon.ts  
 
-WORKDIR /usr/app
-ADD . .
+WORKDIR /usr/app 
 
 COPY deps.ts .
-RUN deno cache --unstable deps.ts
 
-ADD . .
+RUN deno cache deps.ts 
 
-ENTRYPOINT ["/root/.deno/bin/denon"]
+ADD . . 
+
+ENTRYPOINT ["/usr/local/bin/denon"]
